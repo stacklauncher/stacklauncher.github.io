@@ -1,13 +1,15 @@
 <textarea
-    id="template_url">https://raw.githubusercontent.com/frumpel/trivial-test-stack/main/template.json</textarea>
+    id="template_url"
+    style="width: 100%;"
+    >https://raw.githubusercontent.com/frumpel/trivial-test-stack/main/template.json</textarea>
 <div 
     id="button_build"
-    style="background-color: blue; color: white;"
+    style="background-color: blue; color: white; width: 100%;"
     onclick="alert('clicked')"
     >Button</div>
 
 <script>
-    const api_url = "https://3srphmirnb.execute-api.us-west-2.amazonaws.com/Prod"
+    const api_url = "https://lze585tezf.execute-api.us-west-2.amazonaws.com/Prod/"
     button = document.getElementById("button_build")
     button.innerHTML = "Rebuild"
     button.onclick = function() { 
