@@ -11,3 +11,5 @@ Test ...
 {% if page.my_variable %}
   True
 {% endif %}
+
+{% include inputtest.html %}
