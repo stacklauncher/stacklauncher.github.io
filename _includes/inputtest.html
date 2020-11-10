@@ -1,5 +1,5 @@
 <textarea
-    id="template_url">Template URL</textarea>
+    id="template_url">https://raw.githubusercontent.com/frumpel/trivial-test-stack/main/template.json</textarea>
 <div 
     id="button_build"
     style="background-color: blue; color: white;"
@@ -7,10 +7,14 @@
     >Button</div>
 
 <script>
-
+    const api_url = "https://3srphmirnb.execute-api.us-west-2.amazonaws.com/Prod"
     button = document.getElementById("button_build")
     button.innerHTML = "Rebuild"
     button.onclick = function() { 
         var template_url = document.getElementById("template_url").innerHTML
+        var template_enc = encodeURI(template_url)
+        fetch(api_url + "?" + template_url)
+            .then(response => response.json())
+            .then(data => console.log(data))
         alert("URL" + template_url) }
 </script>
