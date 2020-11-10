@@ -1,4 +1,5 @@
-<textarea>Hello</textarea>
+<textarea
+    id="template_url">Template URL</textarea>
 <div 
     id="button_build"
     style="background-color: blue; color: white;"
@@ -6,7 +7,8 @@
     >Button</div>
 
 <script>
+
     button = document.getElementById("button_build")
     button.innerHTML = "Rebuild"
-    button.onclick = alert("script set")
+    button.onclick = function() { alert("script set") }
 </script>
