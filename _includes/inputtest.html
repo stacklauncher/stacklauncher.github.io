@@ -10,5 +10,7 @@
 
     button = document.getElementById("button_build")
     button.innerHTML = "Rebuild"
-    button.onclick = function() { alert("script set") }
+    button.onclick = function() { 
+        var template_url = document.getElementById("button_build").innerHTML
+        alert("URL" + template_url) }
 </script>
