@@ -1,0 +1,11 @@
+.sl_input { width: 100%; }
+
+.sl_box {
+  font-family: Arial;
+  padding: 10px;
+}
+
+.sl_button {
+  background-color: blue;
+  color: white;
+}
