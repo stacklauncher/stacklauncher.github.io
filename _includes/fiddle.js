@@ -7,13 +7,19 @@ var button = document.getElementById("createLinks")
 button.innerHTML = "Rebuild"
 button.onclick = function() {
   var template_url = document.getElementById("templateUrl").value
-  console.log("Hello" + template_url)
+  console.log("template " + template_url)
   var template_enc = encodeURI(template_url)
   var resultDiv2 = document.getElementById("outputUrlLink")
   resultDiv2.innerHTML = api_url + "?" + template_enc
   
-/*   fetch(api_url + "?" + template_url)
-    .then(response => response.json())
-    .then(data => console.log(data))
-  alert("URL" + template_url)  */
-  }
+  var params_url = document.getElementById("paramFileUrl").value
+  console.log("params " + params_url)
+	fetch(params_url)
+		.then(response => response.json())
+    .then(data => {
+    	console.log(data)
+      data.forEach(element => {
+        console.log("param_" + element.ParameterKey + "=" + element.ParameterValue)
+        })
+    })
+}
