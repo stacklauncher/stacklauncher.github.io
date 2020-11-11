@@ -12,4 +12,4 @@ Test ...
   True
 {% endif %}
 
-{% include inputtest.html %}
+{% include fiddle.html %}
