@@ -1,7 +1,9 @@
 .sl_input { width: 100%; }
 
+.sl_output { width: 100%; }
+
 .sl_box {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   padding: 10px;
 }
 
