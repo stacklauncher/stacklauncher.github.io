@@ -12,7 +12,7 @@ window.onload = function () {
     }
 
     var button = document.getElementById("createLinks")
-    button.innerHTML = "Rebuild"
+    button.innerHTML = "Create Links"
     button.onclick = function() {
         var template_url = document.getElementById("templateUrl").value
         var template_enc = encodeURI(template_url)

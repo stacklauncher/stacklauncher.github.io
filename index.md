@@ -3,13 +3,10 @@ title: Home
 my_variable: footer_company_a.html
 ---
 
-# Hello to stacklauncher root md
+# Welcome to stacklauncher
 
-Testing ... 
-Test ...
+Stacklauncher aims to simplify creating AWS launch stack buttons on github. Currently this is in early experimental stages and will break frequently!
 
-{% if page.my_variable %}
-  True
-{% endif %}
+Enter information below and click the "Create Links" button. You can then either click on the links directly or embed them in Markdown documents or web pages.
 
 {% include fiddle.html %}
