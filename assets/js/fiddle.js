@@ -1,5 +1,5 @@
 window.onload = function () {
-    const api_url = "https://lze585tezf.execute-api.us-west-2.amazonaws.com/Prod/"
+    const api_url = "https://api.stacklauncher.cloud"
 
     var resultDiv = document.getElementById("outputUrlLink")
     resultDiv.innerHTML = "Waiting for button ..."
