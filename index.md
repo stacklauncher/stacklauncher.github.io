@@ -3,7 +3,7 @@ title: Home
 navigation_weight: 1
 ---
 
-# Welcome to stacklauncher
+### Create a quick launch link
 
 Stacklauncher aims to simplify creating AWS launch stack buttons on github. Currently this is in early experimental stages and will break frequently!
 
