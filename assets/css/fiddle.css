@@ -2,12 +2,27 @@
 
 .sl_output { width: 100%; }
 
+.sl_label { width: 100%; }
+
+.sl_content { width: 100%; }
+
+.sl_monospace {
+  font-family: "Lucida Console", Monaco, monospace;
+
+}
+
+.sl_small {
+  font-size: 0.5em;
+}
+
 .sl_box {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   padding: 10px;
 }
 
 .sl_button {
   background-color: blue;
   color: white;
+  width: 100%;
+  text-align: center;
 }

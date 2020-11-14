@@ -5,10 +5,51 @@ window.onload = function () {
     resultDiv.innerHTML = "Waiting for button ..."
 
     function create_entries_html(entry_url_string) {
-        var c1="<div class='sl_output'>Link: <a href='" + entry_url_string +"'>Click to launch stack</a></div>"
-        var c2="<div class='sl_output'>URL: " + entry_url_string.replace(/&/g,"&amp;") + "</div>"
-        var c3="<div class='sl_output'>MD: [Launch Stack](" + entry_url_string.replace(/&/g,"&amp;") + ")</div>"
-        return(c1+c2+c3)
+        const asset_path="https://www.stacklauncher.cloud/assets/icons/"
+        const img1 = "button-aws-18.png"
+        const img2 = "button-aws-36.png"
+        const img3 = "button-aws-72.png"
+        // var html1 = "<a href='" + entry_url_string +"'><img src='" + img1 + "' style='height: 2em' /></a>" 
+        var html1 = "<a href='" + entry_url_string +"'><img src='" + asset_path + img1 + "' /></a>" 
+        var html2 = "<a href='" + entry_url_string +"'><img src='" + asset_path + img2 + "' /></a>" 
+        var html3 = "<a href='" + entry_url_string +"'><img src='" + asset_path + img3 + "' /></a>" 
+        var c01 = 
+        "<div class='sl_output'>" +
+        "<div class='sl_label sl_monospace'>" + he.encode(img1) + "</div>" +
+        "<div class='sl_content'>" +
+        html1 +
+        "</div>" +
+        "</div>"
+        var c02 = 
+        "<div class='sl_output'>" +
+        "<div class='sl_label sl_monospace'>" + he.encode(img2) + "</div>" +
+        "<div class='sl_content'>" +
+        html2 +
+        "</div>" +
+        "</div>"
+        var c03 = 
+        "<div class='sl_output'>" +
+        "<div class='sl_label sl_monospace'>" + he.encode(img3) + "</div>" +
+        "<div class='sl_content'>" +
+        html3 +
+        "</div>" +
+        "</div>"
+        var c1 = 
+        "<div class='sl_output'>" +
+        "<div class='sl_label'>HTML embed code</div>" +
+        "<div class='sl_content sl_monospace sl_small'>" +
+        he.encode(html1) +
+        "</div>" +
+        "</div>"
+        var md1 = "[![Launch Stack in AWS](" + asset_path + img1 + ")](" + entry_url_string + ")"
+        var c2 = 
+        "<div class='sl_output'>" +
+        "<div class='sl_label'>Markdown embed</div>" +
+        "<div class='sl_content sl_monospace sl_small'>" +
+        he.encode(md1) +
+        "</div>" +
+        "</div>"
+        return(c01+c02+c03+c1+c2)
     }
 
     var button = document.getElementById("createLinks")
