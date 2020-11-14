@@ -1,6 +1,6 @@
 ---
 title: Home
-my_variable: footer_company_a.html
+navigation_weight: 1
 ---
 
 # Welcome to stacklauncher

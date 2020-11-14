@@ -1,5 +1,6 @@
 ---
 title: FAQ
+navigation_weight: 1
 ---
 
 # How do I add a "Launch in AWS" button to my github README
