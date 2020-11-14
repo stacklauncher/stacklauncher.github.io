@@ -2,3 +2,4 @@ theme: jekyll-theme-architect
 title: stacklauncher.cloud
 description: Lauch AWS stacks ...
 show_downloads: false
+site.github.is_user_page: false
