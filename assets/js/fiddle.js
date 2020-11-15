@@ -44,12 +44,13 @@ window.onload = function () {
         var md1 = "[![Launch Stack in AWS](" + asset_path + img1 + ")](" + entry_url_string + ")"
         var c2 = 
         "<div class='sl_output'>" +
-        "<div class='sl_label'>Markdown embed text</div>" +
+        "<h3 class='sl_label'>Markdown embed text</h3>" +
+        "Copy the output below into your markdown document, e.g. README.md"
         "<div class='sl_content sl_monospace sl_small'>" +
         he.encode(md1) +
         "</div>" +
         "</div>"
-        return(c1+c2+c01+c02+c03)
+        return(c2+c1+c01+c02+c03)
     }
 
     var button = document.getElementById("createLinks")
