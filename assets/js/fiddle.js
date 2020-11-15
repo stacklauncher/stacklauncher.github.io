@@ -16,9 +16,17 @@ window.onload = function () {
         var c01 = 
         "<div class='sl_output'>" +
         "<h3 class='sl_label'>Change button size</h3>" +
-        "There are currently three different button sizes available. The default is " + he.encode(img1) + "." +
+        "There are currently three different button sizes available. The default is " + he.encode(img1) + ":" +
         "<div class='sl_content'>" +
         html1 +
+        "</div>" +
+        "To use a larger button, replace the button name " + he.encode(img1) + " in the strings above with " + he.encode(img2) + ":" +
+        "<div class='sl_content'>" +
+        html2 +
+        "</div>" +
+        "or with " + he.encode(img3) + ":" +
+        "<div class='sl_content'>" +
+        html2 +
         "</div>" +
         "</div>"
         var c02 = 
@@ -52,7 +60,7 @@ window.onload = function () {
         he.encode(md1) +
         "</div>" +
         "</div>"
-        return(c2+c1+c01+c02+c03)
+        return(c2+c1+c01)
     }
 
     var button = document.getElementById("createLinks")
