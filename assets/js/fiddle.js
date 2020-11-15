@@ -26,20 +26,6 @@ window.onload = function () {
         "</div>" +
         "or with " + he.encode(img3) + ":" +
         "<div class='sl_content'>" +
-        html2 +
-        "</div>" +
-        "</div>"
-        var c02 = 
-        "<div class='sl_output'>" +
-        "<div class='sl_label sl_monospace'>" + he.encode(img2) + "</div>" +
-        "<div class='sl_content'>" +
-        html2 +
-        "</div>" +
-        "</div>"
-        var c03 = 
-        "<div class='sl_output'>" +
-        "<div class='sl_label sl_monospace'>" + he.encode(img3) + "</div>" +
-        "<div class='sl_content'>" +
         html3 +
         "</div>" +
         "</div>"
