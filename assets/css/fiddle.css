@@ -8,11 +8,14 @@
 
 .sl_monospace {
   font-family: "Lucida Console", Monaco, monospace;
-
+  outline: solid;
+  outline-width: 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .sl_small {
-  font-size: 0.5em;
+  font-size: 0.7em;
 }
 
 .sl_box {

@@ -15,7 +15,8 @@ window.onload = function () {
         var html3 = "<a href='" + entry_url_string +"'><img src='" + asset_path + img3 + "' /></a>" 
         var c01 = 
         "<div class='sl_output'>" +
-        "<div class='sl_label sl_monospace'>" + he.encode(img1) + "</div>" +
+        "<h3 class='sl_label'>Change button size</h3>" +
+        "There are currently three different button sizes available. The default is " + he.encode(img1) + "." +
         "<div class='sl_content'>" +
         html1 +
         "</div>" +
@@ -36,7 +37,8 @@ window.onload = function () {
         "</div>"
         var c1 = 
         "<div class='sl_output'>" +
-        "<div class='sl_label'>HTML embed code</div>" +
+        "<h3 class='sl_label'>HTML embed code</h3>" +
+        "Copy the output below into a HTML document to create a 'Launch in AWS' button" +
         "<div class='sl_content sl_monospace sl_small'>" +
         he.encode(html1) +
         "</div>" +
@@ -45,7 +47,7 @@ window.onload = function () {
         var c2 = 
         "<div class='sl_output'>" +
         "<h3 class='sl_label'>Markdown embed text</h3>" +
-        "Copy the output below into your markdown document, e.g. README.md"
+        "Copy the output below into your markdown document, e.g. README.md, to create a 'Launch in AWS' button" +
         "<div class='sl_content sl_monospace sl_small'>" +
         he.encode(md1) +
         "</div>" +
