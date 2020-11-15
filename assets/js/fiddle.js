@@ -4,6 +4,39 @@ window.onload = function () {
     var resultDiv = document.getElementById("outputUrlLink")
     resultDiv.innerHTML = "Waiting for button ..."
 
+    var optRegion = document.getElementById("optRegion")
+    console.log("Element" + optRegion)
+
+    // Populate this from AWS service call - can we move this to site variables
+    // aws ec2 describe-regions --all-regions --query 'Regions[*].RegionName'
+    const aws_regions = [
+        "af-south-1",
+        "eu-north-1",
+        "ap-south-1",
+        "eu-west-3",
+        "eu-west-2",
+        "eu-south-1",
+        "eu-west-1",
+        "ap-northeast-2",
+        "me-south-1",
+        "ap-northeast-1",
+        "sa-east-1",
+        "ca-central-1",
+        "ap-east-1",
+        "ap-southeast-1",
+        "ap-southeast-2",
+        "eu-central-1",
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2"
+    ]
+    aws_regions.sort().reverse().forEach(element => {
+      var option = document.createElement("option")
+      option.text = element
+      optRegion.add(option)
+    })
+
     function create_entries_html(entry_url_string) {
         const asset_path="https://www.stacklauncher.cloud/assets/icons/"
         const img1 = "button-aws-18.png"
@@ -61,8 +94,17 @@ window.onload = function () {
             var resultDiv2 = document.getElementById("outputUrlLink")
             resultDiv2.innerHTML = create_entries_html(stackloader_url)
 
+            var opt_region = document.getElementById("optRegion").value
+            console.log("opt region: " + opt_region)
+            if (opt_region !== "Not Selected") {
+                var append_region = "stackRegion=" + opt_region
+                console.log("Append region " + append_region)
+                stackloader_url += "&" + append_region
+                resultDiv2.innerHTML = create_entries_html(stackloader_url)
+    }
+
             var params_url = document.getElementById("paramFileUrl").value
-            console.log("params url" + params_url)
+            console.log("params url:" + params_url)
             fetch(params_url)
                 .then(response => response.json())
                 .then(data => {
@@ -74,6 +116,8 @@ window.onload = function () {
                         resultDiv2.innerHTML = create_entries_html(stackloader_url)
                     })
                 })
+
+                
         }
     }
 }
