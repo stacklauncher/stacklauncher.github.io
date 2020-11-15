@@ -16,3 +16,7 @@ To add a launch button to your README file, you will need a `template.json` or `
 ### Can I add a "Launch in AWS" button to a private repository
 
 Currently this is not possible. To maintain the privacy and security of data in your private repositories we suggest that you use deployment automation tools such as AWS CodePipeline or AWS CodeBuild to launch your templates.
+
+### I selected a region on the link but AWS logs me out
+
+Some AWS regions require that you opt into using them first. If your template link contains a region that you have not whitelisted, AWS will log you out. To whitelist a region, navigate to the [AWS Management Console](https://console.aws.amazon.com/console/home), select the region of your choice in the drop-down selector at the top right and follow the prompts.

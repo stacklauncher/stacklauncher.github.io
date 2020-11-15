@@ -3,10 +3,12 @@ title: Home
 navigation_weight: 1
 ---
 
+[AWS CloudFormation](https://aws.amazon.com/cloudformation/) lets you create whole infrastructure stacks from a template. For easy sharing AWS CloudFormation allows users to share [quick create links](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-create-stacks-quick-create-links.html) that will open a public template in the CloudFormation console.
+
+Stacklauncher aims to simplify the process of creating the required links and embed codes. 
+
 ### Create a quick launch link
 
-Stacklauncher aims to simplify creating AWS launch stack buttons on github by extending the capability of [AWS CloudFormation quick create links](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-create-stacks-quick-create-links.html). Currently this is in early experimental stages and will break frequently!
-
-Enter information below and click the "Create Links" button. You can then either click on the links directly or embed them in Markdown documents or web pages.
+To create links and embed codes enter information below and click the "Create Links" button. You can then either click on the links directly or embed them in Markdown documents or web pages.
 
 {% include fiddle.html %}
